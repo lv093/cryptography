@@ -10,6 +10,8 @@
     <modules>
         <module>ca-sign-issue</module>
         <module>ca-management</module>
+        <module>ca-component</module>
+        <module>user</module>
     </modules>
     <packaging>pom</packaging>
 
