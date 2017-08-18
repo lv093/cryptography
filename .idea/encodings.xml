@@ -2,10 +2,11 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ca-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ca-component" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ca-management" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ca-sign-issue" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-business" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

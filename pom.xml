@@ -8,10 +8,8 @@
     <artifactId>pki</artifactId>
     <version>1.0.0</version>
     <modules>
-        <module>ca-sign-issue</module>
-        <module>ca-management</module>
-        <module>ca-component</module>
-        <module>user</module>
+        <module>ca-business</module>
+        <module>client-business</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -42,6 +40,26 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.16.16</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xbill</groupId>
+                <artifactId>dnsjava</artifactId>
+                <version>2.0.8</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>3.5</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>1.1.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
