@@ -12,11 +12,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ca-business" target="1.7" />
+      <module name="ca-business" target="1.5" />
       <module name="ca-component" target="1.7" />
       <module name="ca-management" target="1.7" />
       <module name="ca-sign-issue" target="1.7" />
-      <module name="client-business" target="1.7" />
+      <module name="client-business" target="1.5" />
       <module name="pki" target="1.5" />
       <module name="user" target="1.7" />
     </bytecodeTargetLevel>
