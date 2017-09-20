@@ -4,3 +4,4 @@ logs/
 target/
 dist/
 *.pid
+logs.home_IS_UNDEFINED

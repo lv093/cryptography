@@ -11,7 +11,7 @@ public interface UserService {
 
     /**
      * 模拟用户数据
-     * @param user
+     * @return
      */
-    void generateUser(User user);
+    User generateUser();
 }

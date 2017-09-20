@@ -33,11 +33,11 @@ public class User {
 
     private String companyAddress;
 
-    private Long postCode;
+    private Integer postCode;
 
     private String companyId;
 
-    private String PcCode;
+    private String pcCode;
 
     private String otherIdentityName;
 
