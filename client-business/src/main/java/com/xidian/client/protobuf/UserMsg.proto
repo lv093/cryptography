@@ -1,0 +1,26 @@
+message Person {
+	required string userId = 1;
+	
+	required string userEmail = 2;
+	
+	required string userName = 3;
+	
+	required string userTel = 4;
+	
+	optional string companyName = 5;
+	
+	optional string companyTel = 6;
+
+    optional string companyAddress = 7;
+
+    optional string postCode = 8;
+
+    optional string companyId = 9;
+
+    optional string PcCode = 10;
+
+    optional string otherIdentityName = 11;
+
+    optional string ortherIdentityNum = 12;
+	
+}
