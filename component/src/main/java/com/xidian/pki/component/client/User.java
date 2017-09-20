@@ -8,9 +8,20 @@ import lombok.Data;
 @Data
 public class User {
 
-    private String userId;
+    /**
+     * 记录编号
+     */
+    private String recordId;
 
+    /**
+     * 登录账号
+     */
     private String userEmail;
+
+    /**
+     * 登录密码
+     */
+    private String password;
 
     private String userName;
 
