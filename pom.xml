@@ -11,6 +11,8 @@
     <modules>
         <module>ca-business</module>
         <module>client-business</module>
+        <module>component</module>
+        <module>client-business-access</module>
     </modules>
 
     <properties>
@@ -83,6 +85,13 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
+            </dependency>
+
+            <!-- Google -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>3.0.0</version>
             </dependency>
 
             <!-- 数据库相关依赖 -->
@@ -203,7 +212,7 @@
                                 <descriptors>
                                     <descriptor>src/main/assembly/assembly.xml</descriptor>
                                 </descriptors>
-                                <outputDirectory>../dist/data-warehouse-wifi-${buildNumber}</outputDirectory>
+                                <outputDirectory>../dist/pki-${buildNumber}</outputDirectory>
                             </configuration>
                         </execution>
                     </executions>

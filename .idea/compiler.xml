@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ca-business" />
         <module name="client-business" />
+        <module name="client-business-access" />
+        <module name="component" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +19,8 @@
       <module name="ca-management" target="1.7" />
       <module name="ca-sign-issue" target="1.7" />
       <module name="client-business" target="1.7" />
+      <module name="client-business-access" target="1.7" />
+      <module name="component" target="1.7" />
       <module name="pki" target="1.7" />
       <module name="user" target="1.7" />
     </bytecodeTargetLevel>

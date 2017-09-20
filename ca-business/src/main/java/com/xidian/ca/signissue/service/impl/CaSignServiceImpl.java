@@ -1,5 +1,7 @@
 package com.xidian.ca.signissue.service.impl;
 
+import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import com.sun.org.apache.xml.internal.security.utils.Base64;
 import com.xidian.ca.signissue.service.CaSignService;
 import com.xidian.client.entity.User;
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +14,7 @@ import org.xbill.DNS.Record;
 import org.xbill.DNS.Type;
 
 import java.io.IOException;
+import java.security.interfaces.RSAPublicKey;
 
 /**
  * Created by LvLiuWei on 2017/8/18.
@@ -22,14 +25,31 @@ public class CaSignServiceImpl implements CaSignService {
 
     @Override
     public String addUser(User user) {
+        String pkStr = "";
         if (user.getUserId() != null) {
             if (checkUserIdValid(user.getUserId())) {
 
             }
+            pkStr = user.getUserId();
         } else {
             if (checkEmailValid(user.getEmail())) {
 
             }
+            pkStr = user.getEmail();
+        }
+
+        //将用户ID或email，即pkStr，转换为公钥
+
+
+        return null;
+    }
+
+    //将byte数组编程RSAPublicKey
+    private RSAPublicKey byte2Pk(byte[] buf) {
+        try {
+            buf = Base64.decode(buf);
+        } catch (Base64DecodingException e) {
+            e.printStackTrace();
         }
 
         return null;
