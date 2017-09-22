@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,8 +17,8 @@ import java.util.List;
  * Created: 2017/9/20
  */
 @Slf4j
-@Service
-public class FaceOriginalStorageHandler implements Processor<User> {
+@Component
+public class UserStorageHandler implements Processor<User> {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;

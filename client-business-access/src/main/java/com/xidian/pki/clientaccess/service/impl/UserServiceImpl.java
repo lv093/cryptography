@@ -1,12 +1,14 @@
 package com.xidian.pki.clientaccess.service.impl;
 
 import com.xidian.pki.clientaccess.process.Processor;
+import com.xidian.pki.clientaccess.process.jdbc.UserStorageHandler;
 import com.xidian.pki.clientaccess.producer.MockUser;
 import com.xidian.pki.clientaccess.producer.MockUserData;
 import com.xidian.pki.clientaccess.service.UserService;
 import com.xidian.pki.component.client.User;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,7 +22,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private Processor<User> userProcessor;
+    private Processor<User> userProcessor = new UserStorageHandler();
 
     @Override
     public User generateUser() {

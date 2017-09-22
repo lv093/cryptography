@@ -54,6 +54,11 @@
                 <artifactId>spring-boot-starter-jdbc</artifactId>
                 <version>1.5.4.RELEASE</version>
             </dependency>
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client</artifactId>
+                <version>0.8.0</version>
+            </dependency>
 
             <!--工具依赖清单-->
             <dependency>

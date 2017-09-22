@@ -3,11 +3,12 @@ package com.xidian.pki.clientaccess;
 import com.xidian.pki.clientaccess.service.UserService;
 import com.xidian.pki.clientaccess.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationPid;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
+
+import javax.xml.ws.Service;
 
 /**
  * Created by LvLiuWei on 2017/9/18.
@@ -20,12 +21,13 @@ public class ClientAccessApplication {
 
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = SpringApplication.run(ClientAccessApplication.class, args);
+        ConfigurableApplicationContext context = new SpringApplicationBuilder()
+                .sources(ClientAccessApplication.class)
+                .web(false)
+                .run(args);
         log.info("----FaceAccessApplication Start PID={}----", new ApplicationPid().toString());
 
-        userService.generateUser();
-
-
+        userService.generateUserList(10);
         context.registerShutdownHook();
     }
 }

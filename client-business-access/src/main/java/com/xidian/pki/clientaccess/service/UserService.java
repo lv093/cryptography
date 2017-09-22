@@ -9,6 +9,8 @@ import com.xidian.pki.component.client.User;
  */
 public interface UserService {
 
+    void generateUserList(int count);
+
     /**
      * 模拟用户数据
      * @return
