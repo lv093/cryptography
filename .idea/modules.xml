@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/blockchain-crypt/blockchain-crypt.iml" filepath="$PROJECT_DIR$/blockchain-crypt/blockchain-crypt.iml" />
       <module fileurl="file://$PROJECT_DIR$/ca-business/ca-business.iml" filepath="$PROJECT_DIR$/ca-business/ca-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/client-business/client-business.iml" filepath="$PROJECT_DIR$/client-business/client-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/client-business-access/client-business-access.iml" filepath="$PROJECT_DIR$/client-business-access/client-business-access.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-business-access/client-business-access.iml" filepath="$PROJECT_DIR$/client-business-access/client-business-access.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component/component.iml" filepath="$PROJECT_DIR$/component/component.iml" />
       <module fileurl="file://$PROJECT_DIR$/component/component.iml" filepath="$PROJECT_DIR$/component/component.iml" />
       <module fileurl="file://$PROJECT_DIR$/pki.iml" filepath="$PROJECT_DIR$/pki.iml" />
     </modules>

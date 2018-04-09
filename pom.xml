@@ -13,6 +13,7 @@
         <module>client-business</module>
         <module>component</module>
         <module>client-business-access</module>
+        <module>blockchain-crypt</module>
     </modules>
 
     <properties>

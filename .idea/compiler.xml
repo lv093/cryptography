@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="blockchain-crypt" />
         <module name="ca-business" />
         <module name="client-business" />
         <module name="client-business-access" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="blockchain-crypt" target="1.7" />
       <module name="ca-business" target="1.7" />
       <module name="ca-component" target="1.7" />
       <module name="ca-management" target="1.7" />
